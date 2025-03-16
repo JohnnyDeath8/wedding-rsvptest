@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John & Trixie's Wedding</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffcccb;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .content {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .content h2 {
+      font-size: 1.8rem;
+      color: #b14c4c;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea, button {
+      margin-top: 1rem;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #b14c4c;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a03c3c;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>You're Invited!</h1>
+    <p>To the wedding of John & Trixie</p>
+  </header>
+
+  <div class="content">
+    <h2>Event Details</h2>
+    <p><strong>Date:</strong> May 02, 2025</p>
+    <p><strong>Time:</strong> 3:30 PM</p>
+    <p><strong>Location:</strong> Deamyles Santiago</p>
+
+    <h2>RSVP</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" name="guests" min="1" required />
+
+      <label for="message">Message (optional)</label>
+      <textarea id="message" name="message" rows="3"></textarea>
+
+      <button type="submit">Send RSVP</button>
+    </form>
+  </div>
+
+  <footer>
+    With love, John & Trixie ❤️
+  </footer>
+</body>
+</html>
